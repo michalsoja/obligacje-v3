@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Obligacje</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="select-debentures">Wybierz ofertę obligacji</label>
+        <select name="debentures" id="selectDebentures">
+            <option value="">--Proszę wybrać ofertę</option>
+            <option data-year="2" data-interest="1.021" value="deb-2y">Obligację 2-letnie 2,10%</option>
+            <option data-year="3" data-interest="1.022" value="deb-3y">Obligacje 3-letnie 2,20%</option>
+            <option data-year="4" data-interest="1.024" value="deb-4y">Obligacje 4-letnie 2,40%</option>
+            <option data-year="10" data-interest="1.027" value="deb-10y">Obligacje 10-letnie 2,70%</option>
+            <option data-year="12" data-interest="1.032" value="deb-12y">Obligacje 12-letnie 3,20%</option>
+        </select>
+        <div class="visibility">
+            <label for="deb-quantity">Ilość obligacji (szt)</label>
+            <input type="number" min="1" id="deb-quantity">
+        </div>
+        <p>Cena jednej obligacji:100zł</p>
+        <p>Do zapłaty za obligacje (PLN): <span class="deb-cost"></span></p>
+        <p>Data wykupienia obligacji przez Skarb Państwa: <span class="deb-endTime"></span></p>
+        <p>Szacowany zysk po zakończeniu oszczędzania (PLN): <span class="deb-profit"></span></p>
+        <input type="submit" value="Oblicz szacowany zysk">
+    </form>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
